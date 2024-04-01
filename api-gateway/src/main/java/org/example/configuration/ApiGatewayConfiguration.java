@@ -11,7 +11,8 @@ public class ApiGatewayConfiguration {
     public RouteLocator gatewayRouter(RouteLocatorBuilder builder) {
         return builder.routes()
                 .route(u->u.path("/user/**")
-                        .uri("http://localhost:8081"))
+//                        .uri("http://localhost:8081"))
+                        .uri("lb://user-management"))
                 .build();
     }
 }
