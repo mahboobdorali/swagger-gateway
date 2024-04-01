@@ -14,5 +14,4 @@ public interface MapStruct {
     User UserResponseDtoToModel(UserResponseDto userResponseDto);
     User UserRequestDtoToModel(UserRequestDto userRequestDto);
     UserResponseDto modelToUserResponseDto(User user);
-//    List<User> dtoListToModelList(List<UserDto> userDtoList);
 }
